@@ -24,4 +24,4 @@ pnpm-debug.log*
 node_modules
 
 # custom
-*db.json
+db.json
