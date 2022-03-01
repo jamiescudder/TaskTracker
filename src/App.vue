@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+		<NavBar/>
 		<Header
 			@toggle-add-task="toggleAddTask"
 			title="Task Tracker"
@@ -17,12 +18,14 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 export default {
 	name: "App",
 	components: {
 		Header,
 		Footer,
+		NavBar,
 	},
 	data() {
 		return {

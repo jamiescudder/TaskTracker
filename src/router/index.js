@@ -4,11 +4,17 @@ import {
 } from 'vue-router'
 import About from '../views/About'
 import Home from '../views/Home'
+import Tasks from '../views/Tasks'
 
 const routes = [{
 		path: '/',
 		name: 'Home',
 		component: Home,
+	},
+	{
+		path: '/tasks',
+		name: 'Tasks',
+		component: Tasks,
 	},
 	{
 		path: '/about',
