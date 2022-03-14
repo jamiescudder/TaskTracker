@@ -4,7 +4,7 @@ import {
 } from 'vue-router'
 import About from '../views/About'
 import Home from '../views/Home'
-import Tasks from '../views/Tasks'
+import Tasks from '../views/Tracker'
 
 const routes = [{
 		path: '/',

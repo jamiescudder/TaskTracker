@@ -1,4 +1,4 @@
 <template>
-	<h1>Vue.js practive</h1>
+	<h1>Vue.js practice</h1>
 </template>
 

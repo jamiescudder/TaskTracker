@@ -1,16 +1,16 @@
 <template>
 	<div
-		@dblclick="$emit('toggle-reminder', task.id)"
+		@dblclick="$store.dispatch('toggleReminder', task.id)"
 		:class="[task.reminder ? 'reminder' : '', 'task']"
 	>
 		<h3>{{ task.text }}
 			<div class="actions">
 				<i
-					@click="$emit('edit-task', task.id)"
+					@click="$store.dispatch('editTask', task.id)"
 					class="fas fa-edit"
 				></i>
 				<i
-					@click="$emit('delete-task', task.id)"
+					@click="$store.dispatch('deleteTask', task.id)"
 					class="fas fa-times"
 				></i>
 			</div>

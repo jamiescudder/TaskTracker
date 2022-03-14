@@ -1,7 +1,7 @@
 <template>
     <div id="navbtns">
 		<a>
-			<router-link class="icon-text" to="/home">
+			<router-link class="icon-text" to="/">
 				<fa class="icon" icon="house" />
 				Home
 			</router-link>

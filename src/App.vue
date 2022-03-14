@@ -2,14 +2,11 @@
 	<div class="container">
 		<NavBar/>
 		<Header
-			@toggle-add-task="toggleAddTask"
-			title="Task Tracker"
-			:showAddTask="showAddTask"
+			:showAddTask="$store.state.showAddTask"
 		/>
 
 		<router-view
-			:showAddTask="showAddTask"
-			@toggle-add-task="toggleAddTask"
+			:showAddTask="$store.state.showAddTask"
 		></router-view>
 		<Footer />
 	</div>
@@ -29,13 +26,11 @@ export default {
 	},
 	data() {
 		return {
-			showAddTask: false,
+			// showAddTask: false,
 		};
 	},
 	methods: {
-		toggleAddTask() {
-			this.showAddTask = !this.showAddTask;
-		},
+		
 	},
 };
 </script>
